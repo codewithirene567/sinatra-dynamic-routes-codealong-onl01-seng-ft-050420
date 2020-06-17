@@ -20,7 +20,7 @@ get "/goodbye/:name" do
 end
 
 get "/multiply/:num1/:num2" do
-  @product = params[:num1].to_f * params[:num2].to_f
+  @product = params[:num1].to_f * params[:num2]
   return "#{@product}"
 end
 
