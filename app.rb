@@ -19,4 +19,7 @@ get "/goodbye/:name" do
   "Hello #{@user_name}!"
 end
 
+get "/multiply/:num1/:num2" do
+  @product = (num1 * num2)
+  "@product"
 end
