@@ -21,7 +21,7 @@ end
 
 get "/multiply/:num1/:num2" do
   @product = params[:num1 * :num2]
-  @product
+  return "#{@product}"
 end
 
 end
